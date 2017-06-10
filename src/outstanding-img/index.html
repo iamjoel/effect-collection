@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>突出显示图片</title>
+  <style>
+    body {
+      margin:10px 0;
+      text-align: center;
+    }
+    .target-wrap{
+      margin: 0 auto;
+      width: 638px;
+      height: 424px;
+      overflow: hidden;
+    }
+    .target{
+      transition: transform 0.5s ease;
+    }
+    .target:hover{
+      transform: scale(1.2);
+    }
+  </style>
+</head>
+<body>
+  <div>鼠标hover图片</div>
+  <div class="target-wrap">
+    <img src="demo.jpg" alt="" class="target">
+  </div>
+</body>
+</html>
