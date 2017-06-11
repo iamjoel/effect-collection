@@ -1,0 +1,57 @@
+html {
+  font-size: 50px;
+}
+.target{
+  margin: 0 auto;
+  width: 5rem;
+  height: 1rem;
+  line-height: 1rem;
+  color: rgb(51, 153, 255);
+  border: 1px solid rgb(51, 153, 255);
+  font-size: 16px;
+  text-align: center;
+}
+.target:hover{
+  animation: breathe 2s;
+}
+
+@keyframes breathe {
+  from {
+    color: rgba(51, 153, 255, 1);
+    border-color: rgba(51, 153, 255, 1);
+  }
+  
+  23% {
+    color: rgba(51, 153, 255, .8);
+    border-color: rgba(51, 153, 255, .8);
+    box-shadow: 0px 1px 20px rgba(51, 153, 255, .8);
+    text-shadow: 0px 1px 20px rgba(51, 153, 255, .8);
+  }
+
+  45% {
+    color: rgba(51, 153, 255, 1);
+    border-color: rgba(51, 153, 255, 1);
+    box-shadow: 0px 1px 20px rgba(51, 153, 255, 1);
+    text-shadow: 0px 1px 20px rgba(51, 153, 255, 1);
+  }
+
+  67% {
+    color: rgba(51, 153, 255, 1);
+    border-color: rgba(51, 153, 255, 1);
+    box-shadow: 0px 1px 10px rgba(51, 153, 255, 1);
+    text-shadow: 0px 1px 10px rgba(51, 153, 255, 1);
+  }
+
+  89% {
+    color: rgba(51, 153, 255, 0.8);
+    border-color: rgba(51, 153, 255, 0.8);
+    box-shadow: 0px 1px 0px rgba(51, 153, 255, 0);
+    text-shadow: 0px 1px 0px rgba(51, 153, 255, 0);
+  }
+
+
+  to {
+    color: rgba(51, 153, 255, 1);
+    border-color: rgba(51, 153, 255, 1);
+  }
+}

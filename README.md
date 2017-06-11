@@ -4,4 +4,4 @@
   * [突出显示图片](https://iamjoel.github.io/effect-collection/src/outstanding-img/) 通过放大图片的方式。
   * [显示图片的描述](https://iamjoel.github.io/effect-collection/src/show-img-description/) 通过在图片上加上蒙层。
 * [展开卷轴的方式展开图片](https://iamjoel.github.io/effect-collection/src/center-open/)
-* 呼吸灯效果
+* [呼吸灯效果](https://iamjoel.github.io/effect-collection/src/breathe-light/)
