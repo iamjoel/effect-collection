@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>娴熟图片详情</title>
+  <script src="../assets/rem.js"></script>
+  <style>
+  html {
+    font-size: 50px;
+  }
+  
+  body {
+    margin: 10px 0;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .target {
+    position: relative;
+    margin: 0 auto;
+    width: 5rem;
+    height: 3rem;
+    background: url(../assets/img/garden.jpg) center center no-repeat;
+    background-size: cover;
+  }
+  
+  .target__detail {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    padding: 0 .1rem;
+    background-color: rgba(0,0,0,0.6);
+    color: #fff;
+    transition: .3s height ease-in;
+  }
+  
+  .target:hover .target__detail {
+    height: 3rem;
+    transition-duration: .5s;
+  }
+  </style>
+</head>
+
+<body>
+  <div>鼠标hover图片</div>
+  <div class="target">
+    <div class="target__detail">
+      苏州园林又称“苏州古典园林”，世界文化遗产，中国十大风景名胜之一，享有“江南园林甲天下，苏州园林甲江南”之美誉，誉为“咫尺之内再造乾坤”，是中国园林的杰出代表。
+    </div>
+  </div>
+</body>
+
+</html>
