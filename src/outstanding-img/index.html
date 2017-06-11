@@ -2,19 +2,28 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
   <title>突出显示图片</title>
+  <script src="../assets/rem.js"></script>
   <style>
+    html{
+      font-size: 50px;
+    }
     body {
       margin:10px 0;
       text-align: center;
+      font-size: 16px;
     }
     .target-wrap{
       margin: 0 auto;
-      width: 638px;
-      height: 424px;
+      width: 5rem;
+      height: 3rem;
       overflow: hidden;
     }
     .target{
+      height: 100%;
+      background: url(demo.jpg) center center no-repeat;
+      background-size: cover;
       transition: transform 0.5s ease;
     }
     .target:hover{
@@ -25,7 +34,7 @@
 <body>
   <div>鼠标hover图片</div>
   <div class="target-wrap">
-    <img src="demo.jpg" alt="" class="target">
+    <div class="target"></div>
   </div>
 </body>
 </html>

@@ -1,3 +1,6 @@
-# 各种效果的收集
+# 效果收集
 ## 目录
-* [突出显示图片](src/outstanding-img) 鼠标移动到图片上，通过放大图片的动画，给人突出显示图片的感觉。
+* 移动到图片上
+  * [突出显示图片](https://iamjoel.github.io/effect-collection/src/outstanding-img/) 通过放大的方式。
+  * 显示图片的描述 通过一个图片上显示蒙层
+* 呼吸灯效果
