@@ -25,3 +25,5 @@ new ScrollMagic.Scene({
   
 })
 ```
+
+offset 和 triggerElement 做的是都是，决定什么时候开始进行动画。

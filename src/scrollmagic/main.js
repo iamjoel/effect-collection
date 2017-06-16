@@ -34,10 +34,25 @@ $(document).ready(function() {
       }) // for debugger
       .addTo(controller)
       
+      // http://scrollmagic.io/
+      var nervousHat = new TimelineMax({repeat: -1, yoyo: true})
+          .add(TweenMax.to(".girl", 0.3, {top: "+=5", left: "-=6", rotation: -3}))
+          .add(TweenMax.to(".girl", 0.3, {top: "-=10", left: "+=6", rotation: 0}))
+          .add(TweenMax.to(".girl", 0.3, {top: "+=5", left: "+=6", rotation: 3}))
+          .add(TweenMax.to(".girl", 0.3, {top: "-=5", left: "-=3", rotation: 1.5}))
+          .add(TweenMax.to(".girl", 0.3, {top: "+=5", left: "-=6", rotation: -1.5}))
+          .add(TweenMax.to(".girl", 0.3, {top: "+=5", left: "+=3", rotation: 0}))
+          .add(TweenMax.to(".girl", 0.3, {top: "-=10"}));
+
+      /*
+       火花效果
+       http://scrollmagic.io/js/demo.js
+      */
       var girlSence = new ScrollMagic.Scene({
           duration: '60%'
       })
       .setPin('.girl') // 过了这个场景，自然就 unpin 了
+      .setTween(nervousHat)
       .addIndicators({
         name: 'girl'
       })
