@@ -7,3 +7,6 @@
 * [展开卷轴的方式展开图片](https://iamjoel.github.io/effect-collection/src/center-open/)
 * [呼吸灯效果](https://iamjoel.github.io/effect-collection/src/breathe-light/)
 * [蚂蚁行军效果](https://iamjoel.github.io/effect-collection/src/marching-ants/) PhotoShop 里选区的效果。
+
+## TODO
+* [文字环绕](play.csssecrets.io/circular-text)
