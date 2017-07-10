@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>行军蚂蚁动画</title>
+  <style>
+    @keyframes ants { to { background-position: 100% 100% } }
+
+    .target {
+      padding: 1em;
+      border: 1px solid transparent;
+      background: linear-gradient(white, white) padding-box,
+                  repeating-linear-gradient(-45deg, black 0, black 25%, transparent 0, transparent 50%) 0 / .6em .6em;
+      animation: ants 12s linear infinite;
+      
+      max-width: 20em;
+      font: 100%/1.6 Baskerville, Palatino, serif;
+    }
+  </style>
+</head>
+<body>
+  <!-- 来自 http://dabblet.com/gist/f26dddc71730c3847153 -->
+  <div class="target">
+    Bacon ipsum dolor amet eu adipisicing elit tongue ground round ex fatback proident kielbasa ham hock. Sausage beef beef ribs aliquip t-bone mollit. Quis beef tri-tip sunt, cupim ut magna salami t-bone. Ut laboris bresaola ribeye biltong landjaeger. Chuck pork belly sed sausage
+  </div>
+</body>
+</html>

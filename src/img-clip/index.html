@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>图片裁切</title>
+  <style>
+    .target1 {
+       clip-path: polygon(50% 0, 100% 50%,
+       50% 100%, 0 50%);
+       transition: 1s clip-path;
+    }
+    .target1:hover{
+      clip-path: polygon(0 0, 100% 0,
+     100% 100%, 0 100%);
+    }
+    .target2 {
+       clip-path: polygon(
+         20px 0, calc(100% - 20px) 0, 100% 20px,
+         100% calc(100% - 20px), calc(100% - 20px) 100%,
+         20px 100%, 0 calc(100% - 20px), 0 20px
+        );
+       transition: 1s clip-path;
+    }
+    .target2:hover {/* 两个 polygon 的顶点数要相同 */
+      clip-path: polygon(0 0, 100% 0, 100% 0,
+     100% 100%, 100% 100%, 0 100%,0 100%, 0 0);
+    }
+  </style>
+</head>
+<body>
+  <img class="target1" src="http://via.placeholder.com/350x150">
+  <img class="target2" src="http://via.placeholder.com/350x150">
+</body>
+</html>
