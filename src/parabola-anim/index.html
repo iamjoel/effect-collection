@@ -29,7 +29,7 @@
   
   .icon-add {
     cursor: pointer;
-    line-height: 10px;
+    line-height: 17px;
     text-align: center;
     background-color: #f60;
     color: #fff;
@@ -48,20 +48,35 @@
     height: 100px;
     background-color: #0f0;
   }
+  .num {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    height: 20px;
+    line-height: 20px;
+    width: 20px;
+    text-align: center;
+    color: #fff;
+    background-color: #f00;
+    border-radius: 50%;
+  }
   </style>
 </head>
 
 <body>
+  <h1>商品列表</h1>
+  <p>点+加入购物车</p>
   <div class="goods-wrap">
     <a href="javascript:void(0);" class="goods">商品1 <span class="icon-goods"></span><span class="icon-add">+</span></a>
     <a href="javascript:void(0);" class="goods">商品2 <span class="icon-goods"></span><span class="icon-add">+</span></a>
   </div>
-  <div class="cart">购物车</div>
+  <div class="cart">购物车<span class="num">0</span></div>
   <script src="../assets/vendor/jquery@3.2.1.js"></script>
   <script src="fly.js"></script>
   <script>
   $(document).ready(() => {
     var cartPos = $('.cart').offset()
+    var num = 0
     $('.goods .icon-add').click(function() {
       var $shopIcon = $(this).prev()
       $(this).before($shopIcon.clone())
@@ -80,13 +95,13 @@
         },
         autoPlay: true, //是否直接运动,默认true
         speed: 1.1, //越大越快，默认1.2
-        // vertex_Rtop: 100, //运动轨迹最高点top值，默认20
+        vertex_Rtop: 10, //运动轨迹最高点top值，默认20
         onEnd: function() {
             $shopIcon.hide()
+            num++
+            $('.num').text(num)
           } //结束回调
       })
-
-
     })
 
   })
